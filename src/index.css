@@ -16,14 +16,10 @@
   -webkit-text-size-adjust: 100%;
   
   --montserrat: 'Montserrat', sans-serif;
+  --lilac : #656EC2
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  max-width: 1920px;
-  min-height: 100vh;
 }
 
