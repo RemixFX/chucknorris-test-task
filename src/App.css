@@ -8,10 +8,6 @@
   box-sizing: border-box;
 }
 
-.grid {
-  margin-top: 60px;
-}
-
 @media screen and (max-width: 860px) {
   .page {
     padding: 16px;
