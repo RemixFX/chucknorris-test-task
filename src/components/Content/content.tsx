@@ -5,6 +5,7 @@ import styles from './content.module.css';
 
 export default function Content() {
 
+  // Получение состояний из стора
   const { jokes, loading, error } = useAppSelector(state => state.card)
 
   if (error) {

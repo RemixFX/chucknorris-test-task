@@ -9,6 +9,7 @@ export default function Search() {
   const [value, setValue] = useState<string>('')
   const { jokes, loading } = useAppSelector(state => state.card)
 
+  // Отправка запроса при введении более трех символов
   useEffect(() => {
     if (value.length > 3) {
       dispatch(findJokes(value))

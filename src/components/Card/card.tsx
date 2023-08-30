@@ -3,6 +3,7 @@ import styles from './card.module.css';
 
 export default function Card({ created_at, id, url, value }: Joke) {
 
+  // Форматирование даты
   const splitDate = created_at.replace(/-/g, '.').split(' ', 1).join()
   const reversedData = splitDate.split('.').reverse().join('.')
 

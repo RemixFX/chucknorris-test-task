@@ -1,27 +1,47 @@
-# React + TypeScript + Vite
+# Тестовое задание
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*взаимодействие с API, для получения подобранных фактов о Чаке Норрисе*
 
-Currently, two official plugins are available:
+*развёрнут на GitHub Pages:*
+## https://remixfx.github.io/chucknorris-test-task
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Описание 
+Сайт представляет из себя поиск по ключевым словам фактов о Чаке Норрисе и отображение их в сетке карточек.
+- для начала поиска необходимо ввести более трех букв на латинице в строку поиска
+- пристуствуют уведомления количестве найденных фактов, отсутсвие найденных результатов и о необходимости ввести больше трех букв
+- уведомление об ошибке
+- спинер загрузки
+- адаптивная верстка для разрешений экранов от 320px
 
-## Expanding the ESLint configuration
+# Информация разработки
+- cайт написан на библиотеке **`React`** c использованием **`TypeScript`**
+- cобран с помощью **`Vite`**
+- применяется библиотека **`Redux-toolkit`** - для глобального управления состоянием 
+- развёрнут на **`GitHub Pages`**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Технологии: 
+ - используются функциональные компоненты
+ - реализована обработка ошибок
 
-- Configure the top-level `parserOptions` property like this:
+*описание работы функций можно найти в коментариях кода*
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+# Запустить локально
+
+1. Клонировать репозиторий
 ```
+git clone https://github.com/RemixFX/chucknorris-test-task.git
+```
+2. Перейти в папку проекта, установить зависимости
+```
+npm install
+```
+3. Запустить проект
+```
+npm run preview
+```
+___
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![react js-18](https://img.shields.io/badge/react-18.2-blue)
+![react-redux](https://img.shields.io/badge/react.redux-8.1-green)
+![react-typescript](https://img.shields.io/badge/typescript-5.0-blue)
+![vite](https://img.shields.io/badge/vite-4.4-yellow)
