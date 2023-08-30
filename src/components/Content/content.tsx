@@ -1,5 +1,6 @@
 import { useAppSelector } from '../../store/hooks';
 import Card from '../Card/card';
+import Preloader from '../Preloader/preloader';
 import styles from './content.module.css';
 
 export default function Content() {
@@ -7,24 +8,24 @@ export default function Content() {
   const { jokes, loading, error } = useAppSelector(state => state.card)
 
   if (error) {
-    return <p>Error</p>
+    return <p className={styles.error}>Data request error</p>
   }
 
   return (
     <main className={styles.grid}>
       {
         loading &&
-        <p className={styles.loading}>Loading...</p>
+        <Preloader />
       }
       {
-        jokes.map((card) => 
-        <Card 
-        key={card.id}
-        created_at={card.created_at}
-        id={card.id}
-        url={card.url}
-        value={card.value}
-        />
+        jokes.map((card) =>
+          <Card
+            key={card.id}
+            created_at={card.created_at}
+            id={card.id}
+            url={card.url}
+            value={card.value}
+          />
         )
       }
     </main>
