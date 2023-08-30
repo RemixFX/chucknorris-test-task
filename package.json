@@ -2,6 +2,7 @@
   "name": "chucknorris-test-task",
   "private": false,
   "version": "0.0.0",
+  "homepage": "https://remixfx.github.io/chucknorris-test-task",
   "type": "module",
   "scripts": {
     "dev": "vite",
