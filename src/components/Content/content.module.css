@@ -1,3 +1,15 @@
 .grid {
   margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: minmax(262px, auto) minmax(150px, auto);
+  grid-auto-rows: minmax(150px, auto);
+  gap: 20px;
 }
+
+@media screen and (max-width: 860px) {
+  .grid {
+    grid-template-rows: minmax(150px, auto);
+  }
+}
+

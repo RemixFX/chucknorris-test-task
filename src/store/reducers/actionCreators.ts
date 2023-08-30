@@ -6,8 +6,10 @@ import { Joke, cardSlice } from "./cardSlice";
 export const findJokes = (query: string) => async (dispatch: AppDispatch) => {
   try {
     dispatch(cardSlice.actions.cardsFetching())
-    const response: Joke[] = await getJokes(query)
-    dispatch(cardSlice.actions.cardsFetchingSuccess(response))
+    const response = await getJokes(query)
+    const jokes: Joke[] = response.result
+    console.log(response)
+    dispatch(cardSlice.actions.cardsFetchingSuccess(jokes))
   } catch {
     dispatch(cardSlice.actions.cardsFetchingError())
   }

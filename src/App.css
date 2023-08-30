@@ -5,6 +5,8 @@
   min-width: 320px;
   max-width: 1596px;
   min-height: 100vh;
+  margin: auto;
+  padding: 25px;
   box-sizing: border-box;
 }
 

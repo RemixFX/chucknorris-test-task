@@ -1,7 +1,7 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 export interface Joke {
-  icon_url: string
+  created_at: string;
   id: string;
   url: string;
   value: string;
